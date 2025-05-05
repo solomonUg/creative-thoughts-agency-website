@@ -26,7 +26,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} flex flex-col justify-between min-h-screen antialiased`}
       >
-        <header className="w-full flex justify-center items-center">
+        <header className="w-full flex justify-center items-center h-25">
           <Navigation/>
         </header>
         {children}

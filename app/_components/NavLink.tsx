@@ -9,15 +9,16 @@ interface LinkProps {
 
 export default function NavLink({ link }: { link: LinkProps }) {
   const pathname = usePathname();
+  console.log(link)
 
   return (
-    <li
+    <Link href={link.path} 
       key={link.label}
       className={`hover:bg-foreground hover:text-background p-2 rounded-4xl ${
         pathname === link.path && "bg-foreground text-background "
       }`}
     >
-      <Link href={link.path}>{link.label}</Link>
-    </li>
+    {link.label}
+    </Link >
   );
 }
