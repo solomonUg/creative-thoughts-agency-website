@@ -9,7 +9,6 @@ interface LinkProps {
 
 export default function NavLink({ link }: { link: LinkProps }) {
   const pathname = usePathname();
-  console.log(link)
 
   return (
     <Link href={link.path} 
